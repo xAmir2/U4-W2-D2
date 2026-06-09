@@ -1,13 +1,18 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-void main() {
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    IO.println(String.format("Hello and welcome!"));
+import static entities.exercise2.Ex2.*;
 
-    for (int i = 1; i <= 5; i++) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        IO.println("i = " + i);
-    }
+void main(String[] args) {
+    List<Integer> list = randomList(5);
+
+    System.out.println("Starting list:");
+    System.out.println(list);
+
+    List<Integer> mirrorList = mirrorList(list);
+    System.out.println("\nMirrored list:");
+    System.out.println(mirrorList);
+
+    System.out.println("\nEven positions:");
+    printList(mirrorList, true);
+
+    System.out.println("\nOdd positions:");
+    printList(mirrorList, false);
 }
