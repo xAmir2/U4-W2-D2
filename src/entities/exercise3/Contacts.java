@@ -62,7 +62,6 @@ public class Contacts {
         }
 
         Set<String> keys = contacts.keySet();
-
         for (String key : keys) {
             System.out.println("Name: " + key + " - Number: " + contacts.get(key));
         }

@@ -16,7 +16,7 @@ public class Ex2 {
     }
 
     public static List<Integer> mirrorList(List<Integer> list) {
-        List<Integer> mirrorList = new ArrayList<>();
+        List<Integer> mirrorList = new ArrayList<>(list);
         for (int i = list.size() - 1; i >= 0; i--) {
             mirrorList.add(list.get(i));
         }

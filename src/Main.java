@@ -1,7 +1,7 @@
 import static entities.exercise2.Ex2.*;
 
 void main(String[] args) {
-    List<Integer> list = randomList(5);
+    List<Integer> list = randomList(10);
 
     System.out.println("Starting list:");
     System.out.println(list);
